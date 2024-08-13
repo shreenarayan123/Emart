@@ -1,0 +1,116 @@
+.navbar{
+    height: 12vh;
+   
+   position: sticky;
+   top: 0;
+  bottom: 0;
+   z-index: 100;
+   
+    background-color: rgb(242, 245, 246);
+
+    
+    
+    
+    .item{
+       
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        
+    }
+    .mycart{
+        display: flex;
+        cursor: pointer;
+    }
+    .icon{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+       
+        align-items: center;
+       
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .none{
+        display:none;
+    }
+    .wish{
+        height: 24px;
+        width: 24px;
+        background-color: rgb(15, 191, 227);
+        position: absolute;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(254, 251, 251);
+        font-family: Arial, Helvetica, sans-serif;
+    
+      right: 120px;
+        top: 4px;
+       
+    }
+    .cartnum {
+      
+        height: 24px;
+        width: 24px;
+        background-color: rgb(7, 187, 223);
+        position: absolute;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(254, 251, 251);
+        font-family: Arial, Helvetica, sans-serif;
+        
+      right: 37px;
+        top: 4px;
+       
+     
+
+        
+    }
+    h3{
+margin-top: 0;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+
+    .nav{
+        display: flex;
+        text-decoration: none;
+        
+        align-items: center;
+        justify-content: space-around;
+        gap: 4rem;
+    }
+
+    .right{
+        display: flex;
+       padding-right: 20px;
+        align-items: center;
+        justify-content: space-between;
+       gap: 3rem;
+        
+
+        
+
+    }
+}
