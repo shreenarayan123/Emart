@@ -1,0 +1,80 @@
+ .card{
+    
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  
+    
+    
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            margin-bottom: 5px;
+        }
+
+    .p-det{
+       margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        
+        gap: 10px;
+
+        h3{
+            margin-top: 0;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(169, 161, 12);
+        }
+    
+    .prices{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+       gap: 10px;
+      
+        h3{
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: black;
+           
+            &:last-child{
+                color: gray;
+                text-decoration: line-through;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+ }
+    }
+    h2{
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: black;
+
+    }
+    
+
+    .image{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+ }

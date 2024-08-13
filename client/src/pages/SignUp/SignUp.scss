@@ -1,0 +1,154 @@
+
+.errmsg{
+    background-color: rgb(230, 5, 39);
+    color: rgb(240, 236, 236);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2rem;
+    border-radius: 12px;
+    margin: 3px;
+    border: 2px solid rgb(13, 13, 13) ;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.registration{
+padding-bottom: 125px;
+padding-top: 100px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ background-color: white;
+
+
+
+.signup{
+    width: 100%;
+    max-width: 320px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+    background-color: white;
+
+    .title{
+      
+       
+       text-align: center;
+        color: #030303;
+       font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        padding-bottom: 1rem;
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        label{
+            font-family: 'Montserrat', sans-serif;
+            .hide {
+                display: none;
+            }
+            
+            .valid {
+                color: limegreen;
+                margin-left: 0.25rem;
+            }
+            
+            .invalid {
+                color: red;
+                margin-left: 0.25rem;
+            }
+            
+            .errmsg {
+                font-family: 'Montserrat', sans-serif;
+                background-color: lightpink;
+                color: firebrick;
+                font-weight: bold;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .line {
+                display: inline-block;
+            }
+        }
+
+        .offscreen {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .instructions {
+            font-size: 0.75rem;
+            border-radius: 0.5rem;
+            background: #000;
+            color: #fff;
+            padding: 0.25rem;
+            position: relative;
+            bottom: -10px;
+
+            .instructions > svg {
+                margin-right: 0.25rem;
+            }
+        }
+
+        label,
+        button {
+        margin-top: 1rem;
+ 
+         }
+        button {
+          padding: 0.5rem;
+          background-color: rgb(9, 137, 241);
+          color: #fff;
+          cursor: pointer;
+          }
+        button:disabled{
+         
+            opacity: 0.5;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button,
+        textarea {
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+         padding: 0.25rem;
+         border-radius: 18px;
+       }
+
+        a, a:visited {
+            color: #25bee4;
+        }
+    }
+    .alregis{
+        display: flex;
+        gap: 10px;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        span {
+            a{
+                text-decoration: none;
+                color: #0ac1ef;
+            }
+        }
+    }
+}
+}
