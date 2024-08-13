@@ -1,0 +1,9 @@
+# Ignore VSCode settings
+.vscode/
+
+# Ignore node modules
+node_modules/
+
+# Ignore package files
+package-lock.json
+package.json
