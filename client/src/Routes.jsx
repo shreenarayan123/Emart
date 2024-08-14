@@ -12,7 +12,7 @@ import Women from "./pages/Women/Women";
 import Kids from "./pages/Kids/Kids";
 import Accessories from "./pages/Accessories/Accessories";
 
-const AppRoutes = ({location}) => {
+const AppRoutes = () => {
   
     return (
       

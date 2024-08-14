@@ -112,7 +112,7 @@ const Signup = () => {
            
             
                 
-            const response = await axios.post(`http://localhost:1337/api/auth/local/register`,{...values},{ 
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/local/register`,{...values},{ 
 
                 headers: {
                 "Content-Type": "application/json",
