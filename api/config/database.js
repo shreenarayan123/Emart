@@ -9,7 +9,7 @@ module.exports = ({ env }) => {
       connection: {
         connectionString: env('DATABASE_URL'),
         host: env('DATABASE_HOST'),
-        port: env.int('DATABASE_PORT'),
+        port: env.int('DATABASE_PORT', 23565),
         database: env('DATABASE_NAME'),
         user: env('DATABASE_USERNAME'),
         password: env('DATABASE_PASSWORD'),
