@@ -1,14 +1,12 @@
 {
+    "outputDirectory": "build",
     "builds": [
       {
-        "src": "config/functions/bootstrap.js",
-        "use": "@vercel/node"
+        "src": "build/**",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "config/functions/bootstrap.js"
-      }
+      { "src": "/(.*)", "dest": "/build/$1" }
     ]
   }
