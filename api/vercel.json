@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "config/functions/bootstrap.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "config/functions/bootstrap.js"
+      }
+    ]
+  }
