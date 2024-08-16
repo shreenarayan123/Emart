@@ -17,7 +17,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
+     
       headers: '*',
       origin: ['https://emart-k5vl.vercel.app']
     }
