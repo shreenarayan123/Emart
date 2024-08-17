@@ -8,6 +8,8 @@ module.exports = ({ env }) => ({
   transfer: {
     token: {
       salt: env('TRANSFER_TOKEN_SALT'),
-    },
+    }
   },
+    url: 'https://emart-pzxc.onrender.com/admin',
+  
 });
