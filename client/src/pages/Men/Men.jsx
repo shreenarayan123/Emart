@@ -14,6 +14,7 @@ const [selectedSubCats, setSelectedSubCats] = useState( [] );
 
 
 
+
 const handleChange = (e) => {
   const value = e.target.value;
   const isChecked = e.target.checked;
@@ -135,6 +136,7 @@ const handleChange = (e) => {
           <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-2._SX3000_QL85_.jpg" alt="" />
         </div>
         <div className="products">
+          
           <Products catId={catId} subCats={selectedSubCats}/>
         </div>
       </div>
