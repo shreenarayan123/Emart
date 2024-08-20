@@ -15,7 +15,7 @@ const Authprovider = ({children}) => {
     const fetchLoggedInUser = async (token) =>{
         setIsLoading(true);
         try{
-            const response = await fetch('https://emart-pzxc.onrender.com/api/users/me',{
+            const response = await fetch(`${API}/users/me`,{
                 headers:{Authorization:`${BEARER} ${token}`},
             });
             const data = await response.json();
