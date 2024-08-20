@@ -5,7 +5,7 @@ import useFetch from '../hooks/useFetch';
 
 const Products = ({catId , subCats}) => {
   
-  const {data, loading} = useFetch(`/products?populate=*&[filters][categories][id]=${catId}${subCats.map(
+  const {data, loading} = useFetch(`https://emart-pzxc.onrender.com/api/products?populate=*&[filters][categories][id]=${catId}${subCats.map(
     (item) => `&[filters][subcategories][id][$eq]=${item}`)}`);  
 console.log(subCats);
   return (
