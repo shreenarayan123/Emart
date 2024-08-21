@@ -74,16 +74,16 @@ const Product = () => {
       { loading ? "loading" : (<>
       <div className="image-sec">
       <div className="other-views">
-      <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img1")} />
-      <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img2")} />
-      <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img3")} />
-      <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img4")} />
-      <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img5?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img5")} />
+      <img src={ data?.attributes?.img1?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img1")} />
+      <img src={data?.attributes?.img2?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img2")} />
+      <img src={data?.attributes?.img3?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img3")} />
+      <img src={ data?.attributes?.img4?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img4")} />
+      <img src={ data?.attributes?.img5?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img5")} />
         
 
       </div>
       <div className="main-image">
-      <img src={ process.env.REACT_APP_UPLOAD_URL + data?.attributes[selectedImg]?.data?.attributes?.url } alt="" />
+      <img src={ data?.attributes[selectedImg]?.data?.attributes?.url } alt="" />
       </div>
       </div>
       <div className="p-details">
