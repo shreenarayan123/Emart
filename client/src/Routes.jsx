@@ -17,7 +17,7 @@ const AppRoutes = () => {
     return (
       
       <Routes>
-         
+        
           <Route path="/" element={<Home />}  />
           <Route  path="/men/:id" element={<Men/>} />
           <Route  path="/women/:id" element={<Women/>} />

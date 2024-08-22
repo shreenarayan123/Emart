@@ -117,7 +117,7 @@ const Navbar = () => {
               <div className="icon" onClick={()=>setOpen(!open)}>
               <LocalMallOutlinedIcon/>
              <h3>Bag</h3></div>
-             <span className={`${items.length !== 0 ? "cartnum" :" none"}`}>{products.length }</span>
+             <span className={`${products.length !== 0 ? "cartnum" :" none"}`}>{products.length }</span>
               
             </div>
           

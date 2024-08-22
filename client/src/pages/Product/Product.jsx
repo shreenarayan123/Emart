@@ -9,7 +9,8 @@ import {useDispatch} from 'react-redux';
 import { addToCart } from '../../redux/cartReducer';
 import { addToWish } from '../../redux/wishReducer';
 import {useAuthContext} from "../../context/AuthContext";
-import useFetch from '../../components/hooks/useFetch'
+import useFetch from '../../components/hooks/useFetch';
+import { ThreeDots } from 'react-loader-spinner';
 import './Product.scss' 
 
 
@@ -66,12 +67,25 @@ const Product = () => {
 
   const dispatch = useDispatch();
   const { data, loading } = useFetch(`/products/${id}?populate=*`);
+  
 
   
 
   return (
     <div className='product-page'>
-      { loading ? "loading" : (<>
+      { loading ? 
+      <ThreeDots
+      visible={true}
+      height="100"
+      width="100"
+      color="#1057e6"
+      radius="9"
+      ariaLabel="three-dots-loading"
+        
+      wrapperStyle={{ position: "absolute", top: "105%", left: "60%", transform: "translate(-50%, -50%)", display: "flex", justifyContent: "center", alignItems: "center" }}
+      wrapperClass=""
+      />
+       : (<>
       <div className="image-sec">
       <div className="other-views">
       <img src={ data?.attributes?.img1?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img1")} />

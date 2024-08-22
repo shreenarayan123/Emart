@@ -11,7 +11,7 @@ const Card = ({item}) => {
       
     <div className="card">
       <div className="image">
-      <img src={ process.env.REACT_APP_UPLOAD_URL + item.attributes?.img1?.data?.attributes?.url } alt="featured" />
+      <img src={item.attributes?.img1?.data?.attributes?.url } alt="featured" />
       </div>
       <div className="details">
        <h2 >{item?.attributes.Title}</h2>
