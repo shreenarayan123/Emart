@@ -59,7 +59,7 @@ const Wishlist = () => {
           <div className="item" key={item.id}>
             <div className="top">
 
-              <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
+              <img src={ item.img} alt="" />
               <div className="details">
                 <div className='i-title'>
                   <h3>{item.title}</h3>

@@ -167,8 +167,9 @@ const Signup = () => {
                navigate("/signin", { replace: true })
                
             ) : (
-                <div className="registration">
+        <div className="signup-wrapper">
                     <ToastContainer/>
+                    <div className="registration">
                 <section className="signup" >
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                   <div className="title">SignUp</div >
@@ -258,7 +259,9 @@ const Signup = () => {
                         </span>
                     </p>
                 </section>
+                <img src="\img\signup-image.jpg" alt="signup" />
                 </div>
+        </div>
             )}
         </>
     )
