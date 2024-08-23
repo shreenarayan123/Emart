@@ -45,7 +45,7 @@ const Footer = () => {
           <span>T&C</span>
           <span>Privacy Policy</span>
         </div>
-        <div className="item ">
+        <div className=" item-about ">
           <h1>About</h1>
           <span>E-mart is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at E-mart from the comfort of your home and get your favourites delivered right to your doorstep.</span>
         </div>
@@ -69,10 +69,10 @@ const Footer = () => {
           
             <h1>Keep In Touch</h1>
             <div className="kintouch">
-          <InstagramIcon   style={{color:'rgb(220, 224, 227)' , fontSize:'2.5rem'} }/>
-          <FacebookIcon   style={{color:'rgb(220, 224, 227)' , fontSize:'2.5rem'} }/>
-          <TwitterIcon   style={{color:'rgb(220, 224, 227)' , fontSize:'2.5rem'} }/>
-          <YouTubeIcon   style={{color:'rgb(220, 224, 227)' , fontSize:'2.5rem'} }/>
+          <InstagramIcon    className='kintouch-icon'/>
+          <FacebookIcon    className='kintouch-icon'/>
+          <TwitterIcon    className='kintouch-icon'/>
+          <YouTubeIcon    className='kintouch-icon'/>
           </div>
 
         </div>

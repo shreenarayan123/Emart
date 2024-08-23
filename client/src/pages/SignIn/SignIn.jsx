@@ -223,7 +223,7 @@ const SignIn = () => {
                          here<br/>
                      </p>
                  </section>
-                 <img src="\img\signin-image.jpg" alt="signin" />
+                 <img className="signin-image" src="\img\signin-image.jpg" alt="signin" />
                  </div>
                 </div>
             )}
