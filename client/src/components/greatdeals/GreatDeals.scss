@@ -31,6 +31,15 @@
         .category{
             display:flex;
             justify-content: space-between;
+            .item img{
+                width:100%;
+
+            }            
+        }
+        .deals{
+            .deal img {
+              width: 100%;
+            }
         }
         
         

@@ -1,31 +1,90 @@
+@import '../../styles/variable';
+@import '../../styles/mixins';
+
 .product-page{
     display: flex;
-    gap: 50px;
-    padding: 20px 50px;
 
+    @include smartphone {
+        gap: 10px;
+        padding: 20px 20px;
+
+      }
+  
+      @include tablet {
+        gap: 10px;
+        padding: 20px 20px;
+
+      }
+  
+      @include laptop {
+        gap: 50px;
+        padding: 20px 50px;
+
+        
+      }
+      @include desktop {
+        gap: 50px;
+        padding: 20px 50px;
+
+      }
+    
     
 
     .image-sec{
         flex:1;
         display: flex;
         gap: 50px;
+        @include smartphone {
+            gap: 10px;
+          }
+      
+          @include tablet {
+            gap: 10px;
+          }
+      
+          @include laptop {
+            gap: 50px;
+            
+          }
+          @include desktop {
+            gap: 50px;
+          }
         
         .other-views{
             flex: 1;
             img{
-                width: 100%;
-                height: 150px;
+                
                 object-fit: cover;
                 border: solid 2px rgb(137, 136, 136);
                 border-radius: 12px;
                 padding: 10px 8px;
                 cursor: pointer;
+                @include smartphone {
+                    width: 80px;
+                    height: 100px;
+                  }
+              
+                  @include tablet {
+                    width: 80px;
+                    height: 100px;
+                  }
+              
+                  @include laptop {
+                    width: 100%;
+                height: 150px;
+                    
+                  }
+                  @include desktop {
+                    width: 100%;
+                height: 150px;
+                  }
             }
         }
         .main-image{
             flex: 5;
             img{
                 width: 100%;
+               
             }
         }
 

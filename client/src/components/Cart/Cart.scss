@@ -1,3 +1,7 @@
+@import '../../styles/variable';
+@import '../../styles/mixins';
+
+
 .cart {
   position: absolute;
   display:flex ;
@@ -15,8 +19,7 @@
   -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
 
- 
-  .place-order{
+   .place-order{
    
     width:26.6vw ;
     background-color: white;
@@ -46,7 +49,28 @@
         color: white;
         font-weight: 600;
         cursor: pointer;
-       
+        @include smartphone {
+          font-size:0.9rem;
+          font-weight: 600;
+        }
+    
+        @include tablet {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+    
+        @include laptop {
+          
+          font-size:1.5rem;
+          font-weight: 600;
+          
+        }
+        @include desktop {
+         
+          font-size: 1.5rem;
+          font-weight: 600;
+          
+        }
       }
     }
   }
@@ -70,10 +94,12 @@
       align-items: center;
       justify-content: space-between;
       position: sticky;
+      
   
       .number {
         display: flex;
         align-items: center;
+        
   
         h2 {
           display: flex;
@@ -81,6 +107,24 @@
           margin-top: 0;
           margin-bottom: 0;
           font-family: Arial, Helvetica, sans-serif;
+          @include smartphone {
+            font-size:1rem;
+          }
+      
+          @include tablet {
+            font-size: 1rem;
+          }
+      
+          @include laptop {
+            display: flex; // or flex
+            font-size:1.5rem;
+            
+          }
+          @include desktop {
+            display: flex; // or flex
+            font-size: 1.5rem;
+            
+          }
           
         }
       }

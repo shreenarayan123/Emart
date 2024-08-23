@@ -73,18 +73,19 @@ const Product = () => {
 
   return (
     <div className='product-page'>
+     
       { loading ? 
-      <ThreeDots
-      visible={true}
-      height="100"
-      width="100"
-      color="#1057e6"
-      radius="9"
-      ariaLabel="three-dots-loading"
-        
-      wrapperStyle={{ position: "absolute", top: "105%", left: "60%", transform: "translate(-50%, -50%)", display: "flex", justifyContent: "center", alignItems: "center" }}
-      wrapperClass=""
-      />
+       <ThreeDots
+       visible={true}
+       height="100"
+       width="100"
+       color="#1057e6"
+       radius="9"
+       ariaLabel="three-dots-loading"
+         
+       wrapperStyle={{ position: "absolute", top: "105%", left: "60%", transform: "translate(-50%, -50%)", display: "flex", justifyContent: "center", alignItems: "center" }}
+       wrapperClass=""
+       />
        : (<>
       <div className="image-sec">
       <div className="other-views">

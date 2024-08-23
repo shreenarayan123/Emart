@@ -14,6 +14,9 @@ const Carousel = () => {
   const ArrowPrev = ({ currentSlide, slideCount, ...props }) => (
     <ArrowBackIosRoundedIcon {...props} style={{color:"white" ,opacity:"0.7", fontSize:"5rem",zIndex:"10",position:'absolute',left:"3rem"}}/>
   );
+
+  
+
  
 
     const settings = {
@@ -38,7 +41,7 @@ const Carousel = () => {
       
 
       <div>
-        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Flip/CML/PC/V1/V2/PC_01.gif" alt="" style={{width:"100vw",height:"68.5vh"}} />
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Flip/CML/PC/V1/V2/PC_01.gif" alt="" style={{width:"100vw" }} />
       </div>
       <div>
         <img src="/img/carousel1_.png" alt="" style={{width:"100vw" }}/>
