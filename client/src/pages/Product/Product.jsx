@@ -68,6 +68,7 @@ const Product = () => {
   const dispatch = useDispatch();
   const { data, loading } = useFetch(`/products/${id}?populate=*`);
   
+  
 
   
 
@@ -83,7 +84,7 @@ const Product = () => {
        radius="9"
        ariaLabel="three-dots-loading"
          
-       wrapperStyle={{ position: "absolute", top: "105%", left: "60%", transform: "translate(-50%, -50%)", display: "flex", justifyContent: "center", alignItems: "center" }}
+       wrapperStyle={{position:"relative", left:"50%", transform:"translate(-50%)", padding:"13rem 0"}}
        wrapperClass=""
        />
        : (<>
