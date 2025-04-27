@@ -41,6 +41,7 @@ const Carousel = () => {
       
 
       <div>
+        <div style={{  position:"absolute", backgroundColor:"white", height:"1.8rem", width:"7.1rem", bottom:"0px" }}></div>
         <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Flip/CML/PC/V1/V2/PC_01.gif" alt="" style={{width:"100vw" }} />
       </div>
       <div>
