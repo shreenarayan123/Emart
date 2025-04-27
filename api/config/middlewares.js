@@ -15,12 +15,14 @@ module.exports = [
     },
   },
   {
-    name: 'strapi::cors',
-    config: {
-      headers: '*',
-      origin: ['https://emart-k5vl.vercel.app','https://emart-pzxc.onrender.com']
-    }
-  },
+  name: 'strapi::cors',
+  config: {
+    headers: '*',
+    origin: ['https://emart-k5vl.vercel.app', 'https://emart-pzxc.onrender.com', 'http://localhost:3000'],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    credentials: true,
+  }
+},
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
