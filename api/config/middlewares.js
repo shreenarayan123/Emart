@@ -18,7 +18,7 @@ module.exports = [
   name: 'strapi::cors',
   config: {
     headers: '*',
-    origin: ['https://emart-k5vl.vercel.app', 'https://emart-pzxc.onrender.com', 'http://localhost:3000'],
+    origin: ['https://emart-k5vl.vercel.app', 'https://emart-pzxc.onrender.com'],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: true,
   }
