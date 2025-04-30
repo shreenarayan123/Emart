@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         <div className='right'>
-        <div className="item">
+        <div className="item about">
             <Link className='link' to="/about">ABOUT</Link>
           </div>
            

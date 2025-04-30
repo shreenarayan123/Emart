@@ -136,7 +136,7 @@ const handleChange = (e) => {
     </div>
     <div className="women-body">
       <div className="top">
-        <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-1._SX3000_QL85_.jpg" alt="" />
+        <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-1._SX3000_QL85_.jpg" alt="women category" />
       </div>
       <div className="products">
         <Products catId={catId} subCats={selectedSubCats}/>

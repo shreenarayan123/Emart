@@ -1,27 +1,19 @@
 // src/styles/_mixins.scss
 
-@import 'variable';
-
 @mixin smartphone {
-  @media (min-width: #{$breakpoint-smartphone}) {
+  @media (max-width: 480px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$breakpoint-tablet}) {
+  @media (min-width: 481px) and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: #{$breakpoint-laptop}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$breakpoint-desktop}) {
+  @media (min-width: 1025px) {
     @content;
   }
 }

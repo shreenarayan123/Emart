@@ -1,3 +1,4 @@
+@import '../../styles/mixins';
 .women{
     display: flex;
     gap: 10px;
@@ -8,11 +9,18 @@
         flex-direction: column;
         gap: 20px;
         padding-top: 20px;
+        @include smartphone {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
         .products{
             display: flex;
-            flex-direction: row;
             width: 100%;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -21,9 +29,27 @@
         .top{
             width: 100%;
            img{
-            width: 100%;
+            width: 100%; 
            }
-            
+           @include smartphone {
+            display: flex ;
+            justify-content: center;
+            width: 100%;
+            img{
+
+                width: 70%;
+            }
+             }
+         
+             @include tablet {
+                display: flex ;
+                justify-content: center;
+                width: 100%;
+                img{
+
+                    width: 70%;
+                }
+             }              
 
         }
     }
@@ -61,6 +87,15 @@
                 text-transform: uppercase;  
                 font-size: 1.2rem;
                 padding-left: 10px;
+
+                @include smartphone {
+                    font-size: 0.8rem;
+                    padding-left: 0px;
+                }
+                @include tablet {
+                    font-size: 1rem;
+                    padding-left: 0px;
+                }
             }
     
             .filter{
@@ -68,14 +103,19 @@
                 border: solid 1px rgba(38, 37, 37, 0.1);
                 border-left: 0;
                 font-family: Arial, Helvetica, sans-serif;
+
+                @include smartphone {
+                    padding: 10px 0px;
+                }
+                @include tablet {
+                    padding: 10px 0px;
+                }
     
                 h2{
                     text-transform: uppercase;
                     font-size: 0.8rem;
-                    color: black;
-                    
+                    color: black;                    
                     font-weight: 700;
-                   
                 }
     
                 .category{
@@ -89,6 +129,13 @@
                         font-size: 0.9rem;
                         display: flex;
                         gap: 5px;
+
+                        @include smartphone {
+                            font-size: 0.6rem;
+                        }
+                        @include tablet {
+                            font-size: 0.6rem;
+                        }
 
                       div{
                             width:1rem;

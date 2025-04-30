@@ -3,16 +3,36 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "./Carousel.scss"
 
 
 
 const Carousel = () => {
   const ArrowNext = ({ currentSlide, slideCount, ...props }) => (
-    <ArrowForwardIosRoundedIcon {...props}  style={{color:"white" ,opacity:"0.7", fontSize:"5rem", position:'absolute',right:"3rem" }}/>
+    <ArrowForwardIosRoundedIcon 
+      {...props}  
+      style={{
+        color: "white",
+        opacity: "0.7",
+        fontSize: window.innerWidth <= 480 ? "2rem" : "5rem", 
+        position: 'absolute',
+        right: "3rem"
+      }}
+    />
   );
 
   const ArrowPrev = ({ currentSlide, slideCount, ...props }) => (
-    <ArrowBackIosRoundedIcon {...props} style={{color:"white" ,opacity:"0.7", fontSize:"5rem",zIndex:"10",position:'absolute',left:"3rem"}}/>
+    <ArrowBackIosRoundedIcon 
+      {...props} 
+      style={{
+        color: "white",
+        opacity: "0.7",
+        fontSize: window.innerWidth <= 480 ? "2rem" : "5rem", 
+        zIndex: "10",
+        position: 'absolute',
+        left: "3rem"
+      }}
+    />
   );
 
   
@@ -29,7 +49,7 @@ const Carousel = () => {
         prevArrow:  <ArrowPrev/>,
         appendDots: dots => (
           <div>
-            <ul style={{ margin: "0px"}}> {dots} </ul>
+            <ul style={{ margin: "0px" , paddingBottom : window.innerWidth <= 480 ? "1rem" : 0  }}> {dots} </ul>
           </div>
         )
       };

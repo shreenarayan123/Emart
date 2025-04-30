@@ -49,7 +49,7 @@ const Footer = () => {
           <h1>About</h1>
           <span>E-mart is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at E-mart from the comfort of your home and get your favourites delivered right to your doorstep.</span>
         </div>
-        <div className="item ">
+        <div className="item-contact">
           <h1>Contact us</h1>
           <div className="contact">
             <RoomOutlinedIcon/>

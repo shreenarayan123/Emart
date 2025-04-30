@@ -1,5 +1,4 @@
-
-
+@import '../../styles/mixins';
 
 
 .list{
@@ -11,9 +10,16 @@
       
    flex-wrap: wrap;
    height: auto;
+
+   @include smartphone {
    
-   
-   /* HTML: <div class="loader"></div> */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 20px 0 ;
+
+    gap: 10px;
+   }
 
     
 }

@@ -1,4 +1,4 @@
-@import '../../styles/variable';
+
 @import '../../styles/mixins';
 
 
@@ -58,6 +58,13 @@
     
       right: 120px;
         top: 4px;
+        @include smartphone{
+          height: 20px;
+          width: 20px;
+          font-size: 1rem;
+          top: 6px;
+          right: 90px;
+         }
        
     }
     .cartnum {
@@ -78,6 +85,14 @@
         
       right: 37px;
         top: 4px;
+
+        @include smartphone{
+         height: 20px;
+         width: 20px;
+         font-size: 1rem;
+         top: 6px;
+         right: 40px;
+        }
        
      
 
@@ -95,6 +110,28 @@ margin-top: 0;
         display: flex;
     align-items: center;
     justify-content: space-between;
+    @include smartphone {
+      gap: 10px;
+      
+     }
+
+    .center{
+      .item{
+        .link img{
+
+          
+          @include tablet{
+            width:10rem;
+
+          }
+          @include smartphone {
+           width:6rem ;
+           height: 1rem;
+           
+          }
+        }
+      }
+    }
     
     }
 
@@ -105,9 +142,11 @@ margin-top: 0;
         align-items: center;
         justify-content: space-around;
         gap: 4rem;
+
+
        
         @include smartphone {
-            display: none;
+          display: none;
           }
       
           @include tablet {
@@ -122,33 +161,45 @@ margin-top: 0;
     }
 
     .right{
-        display: flex;
-       padding-right: 20px;
-        align-items: center;
-        justify-content: space-between;
-       gap: 3rem;
-        @include smartphone {
-            display: flex;
-            padding-right: 20px;
-        align-items: center;
-       justify-content: space-around;
-       
-          }
-      
-          @include tablet {
-            display: flex;
-            padding-right: 20px;
-        align-items: center;
-       justify-content: space-around;
-       
-          }
-      
-          @include laptop {
-            display: flex; // or flex
-            
-          }
+      display: flex;
+     padding-right: 20px;
+      align-items: center;
+      justify-content: space-between;
+     gap: 3rem;
+     .about{
+      display: block;
+      @include smartphone {
+        display:none;
+        background-color: red;
+      }
+      @include tablet {
+        display:none;
+      }
+  
+     }
+      @include smartphone {
+          display: flex;
+          padding-right: 20px;
+      align-items: center;
+     justify-content: space-around;
+     gap: 10px;     
+        }
+    
+        @include tablet {
+          display: flex;
+          padding-right: 20px;
+      align-items: center;
+     justify-content: space-around;
+     gap: 20px;
+     
+        }
+    
+        @include laptop {
+          display: flex; // or flex
+          
+        }
 
-        
+      
 
-    }
+  }
 }

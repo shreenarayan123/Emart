@@ -1,5 +1,5 @@
 
-@import '../../styles/variable';
+
 @import '../../styles/mixins';
 
 
@@ -22,7 +22,10 @@
             display:flex;
             flex-direction: column;
             align-items: center;
-           
+            @include smartphone {
+              font-size: 1rem;
+              text-align: center;
+            }
             
 
             .icon{
@@ -30,6 +33,8 @@
                 color: rgb(253, 251, 251);
                 @include smartphone {
                     font-size: 1rem;
+                    display: flex;
+                    align-items: center;
                   }
               
                   @include tablet {
@@ -37,11 +42,6 @@
                   }
               
                   @include laptop {
-                    display: flex; // or flex
-                    font-size: 3rem;
-                    
-                  }
-                  @include desktop {
                     display: flex; // or flex
                     font-size: 3rem;
                     
@@ -64,10 +64,6 @@
                     font-size: 2rem; // or flex
                     
                   }
-                  @include desktop {
-                    font-size: 2rem; // or flex
-                    
-                  }
             }
 
 
@@ -82,7 +78,7 @@
     padding: 1rem 1.45rem;    
     gap: 50px;
     @include smartphone {
-        gap: 30px;
+        gap: 8px;
       }
   
       @include tablet {
@@ -90,10 +86,6 @@
       }
   
       @include laptop {
-        gap: 50px;
-        
-      }
-      @include desktop {
         gap: 50px;
         
       }
@@ -118,11 +110,6 @@
             font-size: 1.3rem;
             
           }
-          @include desktop {
-            display: flex; // or flex
-            font-size: 1.3rem;
-            
-          }
     }
     span{
         color: rgb(197, 196, 201);
@@ -137,11 +124,6 @@
           }
       
           @include laptop {
-            display: flex; // or flex
-            font-size: 1rem;
-            
-          }
-          @include desktop {
             display: flex; // or flex
             font-size: 1rem;
             
@@ -164,11 +146,6 @@
             font-size: 1rem;
             
           }
-          @include desktop {
-            display: flex; // or flex
-            font-size: 1rem;
-            
-          }
     }
     .link:hover{
        color: rgb(249, 249, 252);
@@ -180,21 +157,12 @@
        
       
           @include smartphone {
-            overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2; /* Adjust number of lines based on your preference */
-        -webkit-box-orient: vertical;
+            display: none;
            
             
           }
           @include tablet {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2; /* Adjust number of lines based on your preference */
-            -webkit-box-orient: vertical;
-               
+            display: none;
             
           }
           @include laptop {
@@ -206,14 +174,34 @@
                 
             
           }
-          @include desktop {
-            display: flex;
-     
-            flex-direction: column;
-                width: 25%;
-                gap: 10px;
-                
-          }
+}
+.item-contact{
+       
+       
+      
+  @include smartphone {
+    display: none;
+   
+    
+  }
+  @include tablet {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Adjust number of lines based on your preference */
+    -webkit-box-orient: vertical;
+       
+    
+  }
+  @include laptop {
+    display: flex;
+
+    flex-direction: column;
+        width: 25%;
+        gap: 10px;
+        
+    
+  }
 }
     .item{
         display: flex;
@@ -221,6 +209,7 @@
     flex-direction: column;
         width: 25%;
         gap: 10px;
+
         
         .kintouch{
             display: flex;
@@ -238,11 +227,6 @@
                   @include laptop {
                     display: flex; // or flex
                     font-size:2.5rem;
-                    
-                  }
-                  @include desktop {
-                    display: flex; // or flex
-                    font-size: 2.5rem;
                     
                   }
             }
@@ -285,9 +269,6 @@
           @include laptop {
             width: auto;
           }
-          @include desktop {
-            width: auto;
-          }
         }
     .copyright{
         display: flex;
@@ -300,9 +281,6 @@
             display: none;
           }
           @include laptop {
-            display: flex;
-          }
-          @include desktop {
             display: flex;
           }
     }
